@@ -35,9 +35,11 @@ mongoose.connect('mongodb+srv://mubraksak:Mubsy2846@backenddb.itgjq1o.mongodb.ne
         //creating a port the app will listen to, to run
         app.listen(3000, () => {
             console.log("express is running on 3000")
+            console.log("let try github")
         });
 
     })
     .catch(() => {
         console.log('Not Connected to the database!')
+        console.log("we are playing with github")
     });

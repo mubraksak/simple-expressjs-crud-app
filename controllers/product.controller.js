@@ -63,9 +63,9 @@ const deleteProducts = async (req, res) => {
         const product = await Product.findByIdAndDelete(id);
         // check if product exits
         if (!product) {
-            return res.status(404).json({ message: "product not found" })
+            return res.status(404).json({ message: "product not found!!!" })
         }
-        res.status(200).json({ message: "product deleted sucessfully" });
+        res.status(200).json({ message: "product deleted sucessfully!!!" });
 
     } catch (error) {
         res.status(500).json({ message: error.message });
